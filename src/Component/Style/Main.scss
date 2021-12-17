@@ -1,0 +1,121 @@
+.main-add-items-container
+{
+    padding: 50px 0;
+    background-color: #000;
+    height: 100vh;
+    overflow: auto;
+    h1{
+        padding-bottom: 25px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        color: #FFF;
+        border-bottom: 2px solid rgba(255, 255, 255, .15);
+        @media (max-width: 700px) {
+            font-size: 25px;
+        }
+    }
+    .item
+    {
+        margin: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 700px) {
+            display: block;
+        }
+        .img
+        {
+            flex: .15;
+            text-align: center;
+            @media (max-width: 768px) {
+                flex: .25;
+            }
+            @media (max-width: 700px) {
+                flex: 1;
+            }
+            #upload-photo{
+                display: none;
+            }
+            #file{
+                display: none;
+            }
+            .upload-photo{
+                cursor: pointer;
+                font-size: 15px;
+                font-weight: 500;
+                margin: 20px 0;
+                width: 100%;
+                padding: 5px 10px;
+                border: 1px solid #c8c8c8;
+                border-radius: 5px;
+                color: #FFFFFF;
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        .form
+        {
+            padding: 0 15px;
+            flex: .85;
+            @media (max-width: 768px) {
+                flex: .75;
+            }
+            @media (max-width: 700px) {
+                flex: 1;
+            }
+            input{
+                padding: 5px 10px;
+                border: 1px solid rgba(255, 255, 255, .15);
+                border-radius: 5px;
+                outline: none;
+                margin: 0 10px;
+                width: 200px;
+                @media (max-width: 768px) {
+                    width: 40%;
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 700px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            button{
+                display: inline-block;
+                margin: 0 10px;
+                padding: 5px 0;
+                width: 150px;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 17px;
+                font-weight: 400;
+                background-color: #FFFFFF;
+                border: none;
+                @media (max-width: 1024px) {
+                    width: 125px;
+                }
+                @media (max-width: 768px) {
+                    width: 40%;
+                }
+                @media (max-width: 700px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+            .add{
+                background-color: #449d9d;
+                color: #FFFFFF;
+            }
+            .delete{
+                color: #FFFFFF;
+                background-color: #ff0000;
+            }
+        }
+    }
+}
